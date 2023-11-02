@@ -60,15 +60,17 @@ The application is using a custom WordPress plugin to manage event data, and Nex
     Navigate to the Plugin Upload Page: In the left-hand menu, click on "Plugins" and then select "Add New". At the top of the page, click on the "Upload Plugin" button.
 
     Upload Custom Plugin: Click on the "Choose File" button and select the event-manager.zip file containing event-manager plugin. Once the file is selected, click on the "Install Now" button.
+    ![upload plugin](https://github.com/unicorn-talent/event-listing/assets/84963788/85531488-7485-4e66-bdbe-9108df65efdd)
 
     Activate event-manager Plugin: After the plugin is uploaded, you will be redirected to a page where you can activate the plugin. Click on the "Activate Plugin" button to activate custom plugin.
+    ![active plugin](https://github.com/unicorn-talent/event-listing/assets/84963788/6d78184b-9079-4770-b7b5-2a35308c683f)
 
 5.  Add New Event on WP-admin
 
     Navigate to the Events Plugin Page: In the left-hand menu, click on "Events" and then select "Add New" at the top of the page.
 
     You can add new events with the custom fields. When creating or editing a post, you will see the custom fields for event_date, event_location, and event_description.
-    ![custom field](https://github.com/unicorn-talent/event-listing/assets/84963788/d24bbea1-eb91-422c-8986-6e468d64359c)
+    ![custom field](https://github.com/unicorn-talent/event-listing/assets/84963788/bb6b108a-6599-4647-9423-44ef0d3e7cc8)
 
     Fill in the relevant information for each field, and publish or update the post.
 
@@ -243,6 +245,34 @@ The application is using a custom WordPress plugin to manage event data, and Nex
         │
         ├── custom-plugin/
         │ └── event-manager.zip
+
+3.  Exception
+
+    ***
+
+    If you have issues with custom post types and API endpoints, try saving your permalink structure again.
+
+    `Ex: After activating a custom plugin, I call the endpoint and it returns a 404 error.`
+
+    To do this, go to the "Settings" in your WordPress admin, click on "Permalinks," and then simply click the "Save Changes" button without making any changes.
+
+    ***
+
+    ***
+
+    If there are no events to fetch in your WordPress database or some error occurred in the endpoint, you may see an error page on the frontend.
+
+    ![error](https://github.com/unicorn-talent/event-listing/assets/84963788/e8dd8354-c83f-4a1a-84cc-219085f33d4f)
+
+    ***
+
+    ***
+
+    If you called event detail page with an incorrect event ID, you amy see a not found page.
+
+    ![not found](https://github.com/unicorn-talent/event-listing/assets/84963788/d2c1f350-3ae5-4a28-a79e-c210647f93b9)
+
+    ***
 
 ![eventlist](https://github.com/unicorn-talent/event-listing/assets/84963788/4597d453-8b5a-4071-8a99-e7985eb3a762)
 ![eventdetail](https://github.com/unicorn-talent/event-listing/assets/84963788/a10d6a44-a064-4f7e-b432-60515457f1b0)
